@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_titulo"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/input_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Título do compromisso"
+        android:ems="10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_descricao"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/input_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Descrição do compromisso"
+        android:ems="10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_data"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <DatePicker
+        android:id="@+id/input_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:datePickerMode="calendar"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

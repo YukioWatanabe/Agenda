@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_height="wrap_content"
     android:padding="10dp">
-    <CheckBox
-        android:id="@+id/check_feito"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/status_compromisso"
+        android:src="@drawable/status_longe"
+        android:layout_height="fill_parent"
         android:layout_marginRight="40px"
-        android:buttonTint="#07C"/>
+        android:layout_width="20dp"/>
     <TextView
         android:id="@+id/titulo_compromisso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/textColorDefault"
-        android:labelFor="@+id/check_feito"
-        android:layout_toRightOf="@+id/check_feito"/>
+        android:layout_toRightOf="@+id/status_compromisso"/>
     <TextView
         android:id="@+id/hora_compromisso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:textColor="@color/textColorDefault"/>
-    <ImageView
-        android:id="@+id/status_compromisso"
-        android:src="@drawable/status_longe"
-        android:layout_height="fill_parent"
-        android:layout_width="20dp"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/hora_compromisso"/>
+        android:textColor="@color/subtextColorDefault"
+        android:layout_below="@id/titulo_compromisso"
+        android:layout_toRightOf="@id/status_compromisso"/>
+    <CheckBox
+        android:id="@+id/check_feito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:layout_alignParentRight="true"/>
 
 </RelativeLayout>
 

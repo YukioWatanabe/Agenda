@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Agenda</string>
+    <string name="label_titulo">Título</string>
+    <string name="incluir">Incluir</string>
+    <string name="label_descricao">Descrição</string>
+    <string name="label_data">Data</string>
 </resources>

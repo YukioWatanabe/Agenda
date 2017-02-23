@@ -1,8 +1,11 @@
 package com.watanabe.agenda.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.watanabe.agenda.R;
@@ -31,6 +34,13 @@ public class MenuPrincipalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
         configuraListaCompromissos();
+
+        ((Button)findViewById(R.id.botao_incluir)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MenuPrincipalActivity.this.startActivity(new Intent(MenuPrincipalActivity.this, IncluirActivity.class));
+            }
+        });
     }
 
     private void configuraListaCompromissos() {

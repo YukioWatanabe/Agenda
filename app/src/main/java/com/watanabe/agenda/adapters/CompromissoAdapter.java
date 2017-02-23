@@ -69,7 +69,7 @@ public class CompromissoAdapter extends ArrayAdapter<Compromisso> {
         }
 
         viewHolder.titulo.setText(compromisso.titulo);
-        viewHolder.hora.setText(new SimpleDateFormat("HH:mm").format(compromisso.data));
+        viewHolder.hora.setText(String.format("às: %1s",new SimpleDateFormat("HH:mm").format(compromisso.data)));
         viewHolder.status = compromisso.status != null ?
                 getStatusImage(compromisso.status, viewHolder.status, getContext()) :
                 getStatusImage(StatusCompromisso.LONGE, viewHolder.status, getContext());
